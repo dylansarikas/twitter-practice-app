@@ -1,0 +1,61 @@
+###User Index
+
+GET http://localhost:3000/users
+
+###Users Create
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test.user@gmail.com"
+}
+
+###User Show
+
+GET http://localhost:3000/users/6
+
+###User Update
+PATCH http://localhost:3000/users/6
+Content-Type: application/json
+
+{
+  "name": "Testy User",
+  "email": "testy.user@hotmail.com"
+}
+
+###User Delete
+
+DELETE http://localhost:3000/users/6
+
+###tweet Index
+
+GET http://localhost:3000/tweets
+
+###tweets Create
+
+POST http://localhost:3000/tweets
+Content-Type: application/json
+
+{
+  "text": "Test tweet",
+  "user_id": 1
+}
+
+###tweet Show
+
+GET http://localhost:3000/tweets/10
+
+###tweet Update
+PATCH http://localhost:3000/tweets/10
+Content-Type: application/json
+
+{
+  "text": "Testy tweet",
+  "user_id": 1
+}
+
+###tweet Delete
+
+DELETE http://localhost:3000/tweets/11
